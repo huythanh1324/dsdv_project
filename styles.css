@@ -1,0 +1,158 @@
+/* styles.css */
+body {
+    font-family: sans-serif, Arial;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.panel {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+}
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.background{
+    background-image: url('./img/premium_vector-1711987477433-89c5f935e5b1.avif') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.intro {
+    background: #8EC5FC;
+    background: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.temperature-rise {
+    background: #FF9A8B;
+    background: linear-gradient(135deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+}
+
+.glacial-melt {
+    background: #78FFD6;
+    background: linear-gradient(135deg, #78FFD6 0%, #007991 100%);
+}
+
+.sea-level-rise {
+    background: #FCCF31;
+    background: linear-gradient(135deg, #FCCF31 0%, #F55555 100%);
+}
+
+.ecosystem-impact {
+    background: #E3FDF5;
+    background: linear-gradient(135deg, #E3FDF5 0%, #FFE6FA 100%);
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+.display-none{
+    display: none
+}
+.display-initial{
+    display: initial
+}
+.opacity-02{
+    opacity: 0.2;
+}
+.opacity-10{
+    opacity: 1;
+}
+.legend:hover{
+    cursor: pointer;
+}
+.no-highlighted{
+    fill: white;
+}
+.highlighted{
+    fill: #12162f;
+}
+.chart i{
+    display: block;
+    text-align: center;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-bubble {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+    max-width: 70%;
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+.chat-bubble.left {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #dcdcdc;
+    align-self: flex-start;
+    border-top-left-radius: 0;
+    margin-right: auto;
+}
+
+.chat-bubble.left::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+.chat-bubble.right {
+    background-color: #007bff;
+    color: #ffffff;
+    align-self: flex-end;
+    border-top-right-radius: 0;
+    margin-left: auto;
+}
+
+.chat-bubble.right::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #007bff;
+}
+
+.button_click {
+	color: white;
+	height: 4em;
+	width: 45%;
+	padding: 0.5em auto;
+	margin: 1em auto;
+	background-color: #1d1d1d;
+	border: none;
+	border-radius: 3px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+

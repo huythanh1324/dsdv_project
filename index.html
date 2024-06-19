@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change and Ecosystems</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+
+        <section class="panel intro">
+            <h1>Climate Change and Its Impact on Ecosystems</h1>
+            <p>Discover how climate change is affecting our planet's ecosystems.</p>
+            <div class="content">
+                <div class="chart">
+
+                    <div class="carbon-dioxide" style="position: relative">
+                        <button class="button_click" id="add">Add a Bar</button>
+                        <button class="button_click" id="remove">Remove a Bar</button>
+                        <div>
+                            
+                            <label for="select-factors">Choose factor to add:</label>
+                            <select id="select-factors"></select>
+                        </div>
+                        
+                    </div>
+                    <i>Carbon dioxide emissions factors</i>
+                </div>
+                <div class="chat-container">
+                    <p class="chat-bubble left">
+                        The bar chart shows the carbon dioxide emissions factors for various energy sources. It compares the CO2 emissions produced per unit of energy (measured in kilograms of CO2 per megawatt-hour) for different sources, such as coal, oil, natural gas, and renewables. It can be seen that Blast Furnace Gas activity produce the most C02 into the air
+                    </p>
+                    <p class="chat-bubble right">
+                        CO2 and other greenhouse gases like methane and nitrous oxide are emitted when we burn fossil fuels, produce materials such as steel, cement, and plastics, and grow the food we eat. If we want to reduce these emissions, we need to transform our energy systems, industries, and food systems.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="panel temperature-rise">
+            <h2>Rising Temperatures</h2>
+            <p>Global temperatures have been rising steadily, affecting weather patterns and ecosystems.</p>
+            <div class="content">
+                    <div class="chat-container">
+                        <p class="chat-bubble left">
+                            The chart illustrates the variation in global average surface temperatures over time. Each line on the chart represents a specific year, showing the monthly average temperatures. The chart reveals trends and anomalies in temperature changes, highlighting overall warming patterns and seasonal fluctuations from 1990 to 2020. You can explore this data interactively to understand how temperatures have shifted over the decades.
+                        </p>
+                        <p class="chat-bubble right">By interacting with the chart, we can see that the temperature in 2020s hotter than in 1990s about 1°C</p>
+                        <p class="chat-bubble right">
+                            Activities such as burning fossil fuels, deforestation, and industrial processes release CO2 into the atmosphere, enhancing the greenhouse effect. This traps more heat, leading to global temperature rises. The result <i style="color: black"><b>is more extreme weather, decreasing % land covered by forest, rising sea levels</b></i>. 
+                        </p>
+                    </div>
+                <div class="chart">
+
+                    <div class="temperature" style="position: relative">
+                        
+                    </div>
+                    <i>Monthly average surface temperatures by year from 1990 to 2020</i>
+                </div>
+            </div>
+        </section>
+    <section class="panel glacial-melt">
+        <h2>Forest</h2>
+        <p>Global temperatures have been rising steadily, affecting the forest.</p>
+        <div class="content">
+            <div class="chart">
+                <i>Share of land covered by forest in five continents (%)</i>
+                <div class="panel forest" style="position: relative">
+                    
+                </div>
+            </div>
+            <div class="chat-container">
+                <p class="chat-bubble left">This chart provides a visual representation of how forest area as a percentage of land area has changed over time across various countries and regions, offering insights into global and regional trends in forest conservation and land use.</p>
+                <p class="chat-bubble right">Africa and America have a down trend in percentage of land that covered by forest when the Asian witness the opposite trend. Moreover, forest in Australia and Europe seem to have recovery signal.</p>
+                <p class="chat-bubble right">Forest area recovery in Europe and Australia since 2000 is due to effective policies, afforestation/reforestation programs, sustainable management, and economic shifts away from agriculture.</p>
+                <p class="chat-bubble right">The continuous increase in forest area in Asia since 1990 is largely driven by extensive afforestation and reforestation programs, government policies promoting forest expansion, and efforts to combat deforestation through sustainable practices and conservation initiatives. Additionally, economic growth has enabled investments in environmental restoration and management</p>
+            </div>
+        </div>
+    </section>
+    <section class="panel sea-level-rise">
+        <h2>Sea Level Rise</h2>
+        <p>Rising sea levels are threatening coastal ecosystems and human settlements.</p>
+        <div class="content">
+            <div class="chat-container">
+                <p class="chat-bubble left">The chart shows the rise in global sea levels over time. It highlights a steady increase in sea levels since the late 19th century, with more rapid rises observed in recent decades due to temperature.</p>
+                <p class="chat-bubble right">From 1940 to 2020, there is a strong correlation between rising global temperatures and increasing sea levels. As global temperatures have increased due to greenhouse gas emissions have contributed to a steady rise in sea levels. The data indicates that as the rate of temperature rise has accelerated, particularly since the late 20th century, the rate of sea level rise has also increased, highlighting the impact of climate change on oceanic and coastal systems.</p>
+            </div>
+            <div class="chart">
+                <i>Global mean sea level rise (mm) and temperature (C) is measured relative to the 1940 - 2020 average sea level.</i>
+                <div class="sea-level" style="position: relative">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="panel ecosystem-impact">
+        <h2>Natural disater</h2>
+        <p>Climate change is causing shifts in ecosystems, affecting biodiversity and species survival.</p>
+        <div class="content">
+            <div class="chart">
+                <div class="natural-disater" style="position: relative">
+                    
+                </div>
+                <i>Global number of reported disasters by size per decade from 1940 to 2020</i>
+            </div>
+            <div class="chat-container">
+                <p class="chat-bubble left">The chart shows the global number of reported natural disasters per decade, categorized by the size of the disaster. It indicates an increasing trend in the frequency of natural disasters over the decades. </p>
+                <p class="chat-bubble left">‘Small’ events have 5 or fewer deaths, less than 1,500 people affected, or reported economic damages
+                    below US$13 million. ‘Large’ events have at least 50 deaths, more than 150,000 people affected, or reported
+                    economic damages of at least US$320 million</p>
+                <p class="chat-bubble right">Rising global temperatures contribute to the increasing frequency and intensity of natural disasters. Warmer temperatures lead to more extreme weather events, such as hurricanes, floods, heatwaves, and wildfires. The enhanced evaporation rates and increased moisture in the atmosphere fuel more intense storms and precipitation events. Additionally, higher temperatures exacerbate droughts and increase the risk of forest fires, while melting ice caps and glaciers contribute to sea-level rise, which amplifies the impact of coastal flooding and storm surges.</p>
+            </div>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+    <script type="module" src="./chart_fn/carbonDioxide.js"></script>
+    <script type="module" src="./chart_fn/forest.js"></script>
+    <script type="module" src="./chart_fn/seaLevel2.js"></script>
+    <script type="module" src="./chart_fn/naturalDisater.js"></script>
+    <script type="module" src="./chart_fn/temperature.js"></script>
+</body>
+</html>
